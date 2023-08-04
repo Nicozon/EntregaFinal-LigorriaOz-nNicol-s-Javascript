@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrega final Coder House - Javascript</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- Vinculo a estilos -->
+<link rel="stylesheet" href="./estilos.css">
+<!-- Vínculo Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Inscripción al Modelo de Naciones Unidas</title>
 </head>
 <body>
+<!-- Título -->
+<h1>Inscripción al Modelo de Naciones Unidas</h1>
+<!-- Formulario de inscripción -->
+    <form id="formularioInscripcion">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required><br>
+        <label for="Organismo">Organismo:</label>
+        <select name="organismo" id="organismo">
+            <option value="Asamblea General">Asamblea General</option>
+            <option value="Consejo de DDHH">Consejo de DDHH</option>
+            <option value="ECOSOC">ECOSOC</option>
+        </select><br>
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Australia">Australia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Canada">Canadá</option>
+            <option value="Macau">China</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Egypt">Egipto</option>
+            <option value="España">España</option>
+            <option value="United States">Estados Unidos</option>
+            <option value="France">Francia</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Italia">Italia</option>
+            <option value="Japan">Japón</option>
+            <option value="Estados unidos mexicanos">México</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Netherlands">Países Bajos</option>
+            <option value="United Kingdom">Reino Unido</option>
+            <option value="Russia">Rusia</option>
+            <option value="South Africa">Sudáfrica</option>
+            <option value="Sweden">Suecia</option>
+            <option value="Switzerland">Suiza</option>
+            <option value="Thailand">Tailandia</option>
+            <option value="Turkey">Turquía</option>
+            <option value="Ukraine">Ucrania</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Vietnam">Vietnam</option>
+        </select><br>
+        <input type="submit" value="Realizar inscripción">
+    </form>
+<!-- Lista de participantes inscritos -->
+<h2>Lista de participantes inscritos:</h2>
+    <ul id="listaParticipantes"></ul>
+    <button id="btnBorrarLista">Borrar</button>
+
+<!-- Div para mostrar la información del país inscrito -->
+<div id="paisInscrito">
+    <h2>Información del país inscrito:</h2>
+    <p id="nombrePais"></p>
+    <p id="capitalPais"></p>
+    <p id="poblacionPais"></p>
+</div>
+
+<!-- Vínculo a documento Javascript -->
+    <script src="./main.js"></script>
     
+<!-- Vínculo a Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
